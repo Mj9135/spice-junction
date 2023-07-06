@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+   
+    --primary-text-color:black;
+    --secondary-text-color:red;
+    --header-color:grey;
+    scroll-behavior: smooth;
+}
+body{
+     font-family:'Nunito',sans-serif;
+     text-align: center;
+}
+h1{
+   font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.3rem;
+}
+.container{
+    max-width:1200px;
+  margin-inline:auto ;
+  overflow: hidden;
+  padding: 20px;
+}
+a{
+    color: black;
+    transition: 0.5s ease;
+}
+ul{
+    list-style: none;
+}
+.flex{
+display: flex;
+}
+.hover-links:hover{
+    color: red;
+}
+.primary-btn{
+    border: 2px solid red;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    transition: 0.6s ease;
+
+}
+.primary-btn:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.nav-bar {
+    
+    justify-content: space-between;
+    margin-top:40px;
+    align-self: baseline;
+}
+.nav-toggle{
+    display: none;
+    
+}
+.nav-toggle i{
+    font-size: 25px;
+}
+
+.nav-list{
+     flex-basis: 730px;
+     margin-top: 10px;
+}
+.nav-list ul{
+    justify-content: end;
+    gap: 40px;
+    font-size: 1.1rem;
+    
+}
+.logo{
+    font-size: 30px;
+    text-align: start;
+    font-weight: 700;
+}
+.icon{
+    color:red;
+}
+.hero{
+    margin-top: 100px;
+}
+.hero-main{
+    justify-content: center;
+    
+   
+}
+
+.hero-content{
+    width: 50%;
+    justify-self: center;
+    flex-direction: column;
+     text-align: center;
+
+}
+.hero-photo{
+    width: 45%;
+}
+.hero-photo img{
+   
+    width: 100%;
+    animation: float 2.5s linear infinite;
+}
+@keyframes float{
+0%,100%{
+    transform: translateY(0rem);
+}
+50%{
+    transform: translateY(2rem);
+}
+}
+.hero-content{
+    text-align: left;
+    margin-top: 100px;
+}
+.hero-content p{
+    margin-bottom: 20px;
+}
+.special{
+    margin-top: 180px;
+    background-color:rgb(234, 231, 231);
+   padding-bottom: 40px;
+}
+#red{
+    color: red;
+}
+.head-special{
+padding-top: 40px;
+}
+.special-main{
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 20px;
+margin-top: 40px;
+
+}
+.box{
+    width: 30%;
+    height: 260px;
+    border: 1px solid black;
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+   
+}
+.box p{
+    font-size: 16px;
+}
+.box h3{
+    font-size: 30px;
+}
+.box a{
+    font-size: 50px;
+    color: rgb(239, 108, 108);
+}
+.box::before{
+    content: "";
+    top: 0;
+   right:0;
+   left: 0;
+   bottom: 0;
+   
+    background-position: center;
+    background-size: cover;
+    transform: scale(0);
+    transform-origin: center;
+    position: absolute;
+    transition: all 0.8s ease-in-out;
+    
+}
+.box:hover::before{
+transform: scale(1);
+border-radius: 5px;
+
+}
+.box1::before{
+    background-image: url(/image/1\ \(3\).jpg);
+}
+.box2::before{
+    background-image:url(/image/1\ \(4\).jpg)
+}
+.box3::before{
+    background-image:url(/image/ice.jpg)
+}
+.box4::before{
+    background-image:url(/image/cofe.jpg)
+}
+.box5::before{
+    background-image:url(image/1\ \(2\).jpg)
+}
+.box6::before{
+    background-image:url(image/tea.jpg)
+}
+
+.popular{
+    margin-top: 40px;
+}
+.card-popular{
+    flex-wrap: wrap;
+   gap: 20px;
+    margin-top: 40px;
+   justify-content: space-between;
+     
+}
+.card{
+    width: 30%;
+    border: 2px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,0.1);
+    position: relative;
+   
+}
+.card img{
+    margin-top: 20px;
+    height: 15rem;
+    object-fit: cover;
+    width: 90%;
+    border: 1px solid black;
+     
+}
+.star{
+    color:orange;
+    
+    
+}
+.banner{
+    margin-top: 80px;
+}
+.banner-main{
+    margin-top: 40px;
+    justify-content: center;
+    gap:70px
+    
+
+}
+.circle{
+    width: 15%;
+    
+}
+.circle img{
+    width: 90%;
+   box-shadow:0 .5rem 1rem rgba(0,0,0,0.5);
+    border-radius: 50%;border: 5px solid white;
+  margin-bottom: 10px;
+}
+.review-container{
+    flex-wrap: wrap;
+    justify-content: space-between;
+     position: relative;
+}
+
+.review{
+    margin-top: 50px;
+}
+.review-box{
+     margin-top: 80px;
+    width: 30%;
+    background-color: rgb(56, 55, 55);
+    padding: 40px 20px 5px;
+    color: white;
+     box-shadow:0 .5rem 1rem rgba(0,0,0,0.9);
+     border: 5px solid white;
+}
+.review-img{
+height: 8rem;
+width: 8rem;
+border-radius: 50%;
+object-fit: cover;
+margin-top: -9rem;
+border: 5px solid white;
+ box-shadow:0 .5rem 1rem rgba(0,0,0,0.9);
+}
+.review-box p{
+    font-size: 16px;
+    padding: 10px 5px;
+}
+.review-box{
+    padding-top: 60px;
+}
+.order{
+    margin-top: 40px;
+}
+.order-section{
+    margin-top: 60px;
+    justify-content: center;
+    gap: 10px;
+    border: 5px solid white;
+ box-shadow:0 .5rem 1rem rgba(0,0,0,0.9);
+ border-radius: 10px;
+}
+.order-box{
+    width: 50%;
+    color: black;
+}
+.order-box img{
+    width: 100%;
+    border-radius: 5px;
+}
+#naame,#number{
+    width: 40%;
+    padding: 10px;
+     border: 1px solid black;
+}
+#emaill{
+     width: 45%;
+    padding: 10px;
+     border: 1px solid black;
+}
+.name-id,.email-id,.text-big{
+    padding: 10px;
+    gap: 20px;
+   
+}
+.text-big{
+    flex-direction: column;
+    width: 84%;
+}
+#text-bigg{
+    padding: 10px;
+     border: 1px solid black;
+}
+form{
+    margin-bottom: 20px;
+}
+.order-btn{
+    text-align: left;
+    width: 110px;
+    margin-left: 10px;
+}
+::placeholder{
+    color: black;
+    font-size: 15px;
+}
+.price,.price1{
+    background-color:red;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 700;
+   
+      border: 2px solid white;
+ box-shadow:0 .5rem 1rem rgba(0,0,0,0.9);
+ 
+}

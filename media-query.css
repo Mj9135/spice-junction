@@ -1,0 +1,99 @@
+@media screen and (max-width:991px){
+     .nav-toggle{
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.nav-list{
+    display: none;
+}
+
+
+
+
+}
+@media screen and (max-width:767px){
+    .hero-main{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-content{
+        width: 100%;
+        justify-content:flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-photo{
+        width: 100%;
+        justify-self: center;
+        align-items: center;
+    }
+    .box{
+        width: 48%;
+    }
+    .card{
+        width: 48%;
+    }
+    .review-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .review-box{
+        width: 50%;
+    }
+     .order-section{
+        flex-direction: column;
+     }
+     .order-box{
+        width: 100%;
+     }
+   
+}
+@media screen and (max-width:479px){
+     h1{
+ font-size: 2rem;   
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+}
+.special-main{
+    flex-direction: column;
+}
+.box{
+    width: 100%;
+}
+.card-popular{
+    flex-direction: column;
+}
+.card{
+    width: 100%;
+}
+.banner-main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle{
+    width: 60%;
+}
+.review-box{
+        width: 100%;
+    }
+     .review-container{
+        flex-direction: column;
+     }
+     .order-section{
+        flex-direction: column;
+     }
+     .order-box{
+        width: 100%;
+     }
+}
